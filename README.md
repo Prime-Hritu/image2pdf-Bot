@@ -11,7 +11,7 @@ CH_NM = Your Channel Username Without (@)
 OWNER = Your Telegram Username Without (@)
 ```
 # Deploy Method :
-👉 ## Heroku :
+## Heroku :
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xD-Botzz/image2pdf-Bot)
 
