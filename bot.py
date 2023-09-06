@@ -33,7 +33,7 @@ async def fore(c, m):
       try:
         chat = await c.get_chat_member(CH_ID, m.from_user.id)
         if chat.status=="kicked":
-           await c.send_message(chat_id=m.chat.id, text="You are Banned ☹️\n\n📝 If u think this is an ERROR message in @Privates_Chats", reply_to_message_id=m.id)
+           await c.send_message(chat_id=m.chat.id, text="You are Banned ☹️\n\n📝 If u think this is an ERROR message in @xD_Chatzz", reply_to_message_id=m.id)
            m.stop_propagation()
       except UserBannedInChannel:
          return await c.send_message(chat_id=m.chat.id, text="Hai you made a mistake so you are banned from channel so you are banned from me too 😜")
