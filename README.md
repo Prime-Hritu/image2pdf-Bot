@@ -18,5 +18,6 @@ OWNER = Your Telegram Username Without (@)
 # Contact Me :
 [![Contact Me On Telegram](https://img.shields.io/badge/Contact%20xD-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/xD_Boi)
 
+## Give one star to the repo it will take only one click on your PC or Mobile screen 🙂
 
 **Special Thanks To [lntechnical2](https://github.com/lntechnical2) For [Imagetopdf](https://github.com/lntechnical2/Imagetopdf) Repo**
