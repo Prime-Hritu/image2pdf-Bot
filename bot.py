@@ -40,7 +40,7 @@ async def fore(c, m):
       except UserNotParticipant:
           button = [[InlineKeyboardButton('🇮🇳 Updates Channel', url=f'https://t.me/{CH_NM}')]]
           markup = InlineKeyboardMarkup(button)
-          return await c.send_message(chat_id=m.chat.id, text="""Hai bro,\n\nYou must join my channel for using me.\n\nPress this button to join now Report Error at @xD_Chatzz 👇""", reply_markup=markup)
+          return await c.send_message(chat_id=m.chat.id, text="""Hai bro,\n\nYou must join my channel for using me.\n\nPress this button to join now\n\nReport Error at @xD_Chatzz 👇""", reply_markup=markup)
       m.continue_propagation()
 
 @app.on_message(filters.command(['start']))
