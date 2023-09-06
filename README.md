@@ -15,3 +15,8 @@ OWNER = Your Telegram Username Without (@)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xD-Botzz/image2pdf-Bot)
 
+# Contact Me :
+[![Contact Me On Telegram](https://img.shields.io/badge/Contact%20xD-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/xD_Boi)
+
+
+**Special Thanks To [lntechnical2](https://github.com/lntechnical2) For [Imagetopdf](https://github.com/lntechnical2/Imagetopdf) Repo**
