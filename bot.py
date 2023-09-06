@@ -40,7 +40,7 @@ async def fore(c, m):
       except UserNotParticipant:
           button = [[InlineKeyboardButton('🇮🇳 Updates Channel', url=f'https://t.me/{CH_NM}')]]
           markup = InlineKeyboardMarkup(button)
-          return await c.send_message(chat_id=m.chat.id, text="""Hai bro,\n\nYou must join my channel for using me.\n\nPress this button to join now 👇""", reply_markup=markup)
+          return await c.send_message(chat_id=m.chat.id, text="""Hai bro,\n\nYou must join my channel for using me.\n\nPress this button to join now Report Error at @xD_Chatzz 👇""", reply_markup=markup)
       m.continue_propagation()
 
 @app.on_message(filters.command(['start']))
@@ -75,7 +75,7 @@ async def pdf(client,message):
  image = Image.open(file)
  img = image.convert('RGB')
  LIST[message.from_user.id].append(img)
- await ms.edit(f"{len(LIST[message.from_user.id])} image   Successful created PDF if you want add more image Send me One by one\n\n **if done click here 👉 /convert** ")
+ await ms.edit(f"{len(LIST[message.from_user.id])} image   Successful created PDF if you want add more image Send me One by one\n\n **if done click here 👉 /convert\n\nReport Error @xD_Chatzz** ")
  
 
 @app.on_message(filters.command(['convert']))
