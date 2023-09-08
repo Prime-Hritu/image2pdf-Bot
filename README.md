@@ -25,7 +25,7 @@ git clone https://github.com/xD-Botzz/image2pdf-Bot
 cd image2pdf-Bot
 pip install -r requirements.txt
 ```
-** Now Fill The Requirements In **```bot.py```
+**Now Fill The Requirements In** ```bot.py```
 
 **To Run / Start The Bot**
 ```python bot.py```
