@@ -28,6 +28,7 @@ pip install -r requirements.txt
 **Now Fill The Requirements In** ```bot.py```
 
 **To Run / Start The Bot**
+
 ```python bot.py```
 
 # Contact Me :
