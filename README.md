@@ -16,6 +16,19 @@ OWNER = Your Telegram Username Without (@)
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xD-Botzz/image2pdf-Bot)
 
 ## Termux :
+```
+apt update && apt upgrade
+pkg update && pkg upgrade
+pkg install python
+pkg install git
+git clone https://github.com/xD-Botzz/image2pdf-Bot
+cd image2pdf-Bot
+pip install -r requirements.txt
+```
+** Now Fill The Requirements In **```bot.py```
+
+**To Run / Start The Bot**
+```python bot.py```
 
 # Contact Me :
 [![Contact Me On Telegram](https://img.shields.io/badge/Contact%20xD-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/xD_Boi)
