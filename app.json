@@ -1,7 +1,7 @@
 {
     "name": "Image To Pdf Bot",
     "description": "This Bot Converting Image To Pdf ",
-    "repository": "https://github.com/lntechnical2/iamgetopdfbot",
+    "repository": "https://github.com/xD-Botzz/iamgetopdfbot",
     "keywords": ["Pdf ", "pyrogram", "telegram bot"],
     "env": {
         "TOKEN": {
