@@ -54,7 +54,7 @@ i can convert image to pdf
 
 **Send Me Images And At End Send /convert**
 
-This bot created by @{OWNER}""",reply_to_message_id = message.id ,  reply_markup=InlineKeyboardMarkup(
+This bot created by @Prime_Hritu""",reply_to_message_id = message.id ,  reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton("Updates Channel 🇮🇳" ,url=f"https://t.me/{CH_NM}") ],
