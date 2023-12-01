@@ -1,5 +1,6 @@
 # code dev by t.me/Prime_Hritu
 # © Hritu
+# Use The Code With Credits To t.me/Prime_Hritu otherwise Strict Action will be taken
 import os
 from PIL import Image
 from pyrogram import Client,filters 
