@@ -1,4 +1,5 @@
 # code dev by t.me/Prime_Hritu
+# © Hritu
 import os
 from PIL import Image
 from pyrogram import Client,filters 
