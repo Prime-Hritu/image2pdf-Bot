@@ -29,6 +29,7 @@ app = Client(
     )
 
 print("Bot Started! © t.me/Prime_Hritu")
+print("Must Make Bot Admin In Force Sub Channel")
 LIST = {}
 
 @app.on_message(filters.text & filters.private & filters.incoming)
