@@ -13,7 +13,7 @@ OWNER = Your Telegram Username Without (@)
 # Deploy Method :
 ## Heroku :
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/xD-Botzz/image2pdf-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Prime-Hritu/image2pdf-Bot)
 
 ## Termux :
 ```
@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ```python bot.py```
 
 # Contact Me :
-[![Contact Me On Telegram](https://img.shields.io/badge/Contact%20xD-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/xD_Boi)
+[![Contact Me On Telegram](https://img.shields.io/badge/Contact%20xD-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Prime_Hritu)
 
 ## Give one star to the repo it will take only one click on your PC or Mobile screen 🙂
 
