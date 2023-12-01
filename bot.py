@@ -28,7 +28,7 @@ app = Client(
             api_id=API_ID
     )
 
-
+print("Bot Started! © t.me/Prime_Hritu")
 LIST = {}
 
 @app.on_message(filters.text & filters.private & filters.incoming)
@@ -98,8 +98,5 @@ async def done(client,message):
  
  await client.send_document(message.from_user.id, open(path, "rb"), caption = "Here your pdf !!")
  os.remove(path)
- 
- 
- 
- 
+
 app.run()
