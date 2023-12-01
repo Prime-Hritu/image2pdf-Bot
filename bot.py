@@ -57,7 +57,9 @@ i can convert image to pdf
 This bot created by @{OWNER}""",reply_to_message_id = message.id ,  reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Updates Channel 🇮🇳" ,url=f"https://t.me/{CH_NM}") ]
+                    InlineKeyboardButton("Updates Channel 🇮🇳" ,url=f"https://t.me/{CH_NM}") ],
+[
+                    InlineKeyboardButton("Developer 💀" ,url="https://t.me/Prime_Hritu") ]
                  ]        ) )
 
 
