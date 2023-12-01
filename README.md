@@ -21,7 +21,7 @@ apt update && apt upgrade
 pkg update && pkg upgrade
 pkg install python
 pkg install git
-git clone https://github.com/xD-Botzz/image2pdf-Bot
+git clone https://github.com/Prime-Hritu/image2pdf-Bot
 cd image2pdf-Bot
 pip install -r requirements.txt
 ```
