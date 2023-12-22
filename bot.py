@@ -7,18 +7,13 @@ from pyrogram import Client,filters
 from pyrogram.types import (InlineKeyboardButton,  InlineKeyboardMarkup)
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup 
-from pyrogram.errors import UserBannedInChannel, UserNotParticipant
-from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
+from myrogram import notJoin, forceMe
 
 TOKEN = os.environ.get("TOKEN", "")
 
 API_ID = int(os.environ.get("API_ID", ))
 
 API_HASH = os.environ.get("API_HASH", "")
-
-CH_ID = os.environ.get("CH_ID", "")
-
-CH_NM = os.environ.get("CH_NM", "")
 
 OWNER = os.environ.get("OWNER", "")
 
@@ -32,23 +27,11 @@ print("Bot Started! © t.me/Prime_Hritu")
 print("Must Make Bot Admin In Force Sub Channel")
 LIST = {}
 
-@app.on_message(filters.text & filters.private & filters.incoming)
-async def fore(c, m):
-      try:
-        chat = await c.get_chat_member(CH_ID, m.from_user.id)
-        if chat.status=="kicked":
-           await c.send_message(chat_id=m.chat.id, text="You are Banned ☹️\n\n📝 If u think this is an ERROR message in @PrivateHelpXBot", reply_to_message_id=m.id)
-           m.stop_propagation()
-      except UserBannedInChannel:
-         return await c.send_message(chat_id=m.chat.id, text="Hai you made a mistake so you are banned from channel so you are banned from me too 😜")
-      except UserNotParticipant:
-          button = [[InlineKeyboardButton('🇮🇳 Updates Channel', url=f'https://t.me/{CH_NM}')]]
-          markup = InlineKeyboardMarkup(button)
-          return await c.send_message(chat_id=m.chat.id, text="""Hai bro,\n\nYou must join my channel for using me.\n\nPress this button to join now\n\nReport Error at @PrivateHelpXBot 👇""", reply_markup=markup)
-      m.continue_propagation()
-
 @app.on_message(filters.command(['start']))
 async def start(client, message):
+ chat = await forceMe(m.from_user.id)
+ if chat == "no":
+         return await forceMe(c, m)
  await message.reply_text(text =f"""Hello {message.from_user.first_name } , I Am image to pdf bot 
 
 i can convert image to pdf
