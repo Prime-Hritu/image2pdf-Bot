@@ -1,3 +1,4 @@
 TgCrypto
 Pillow
 pyrogram
+https://github.com/Prime-Hritu/myrogram/archive/main.zip
