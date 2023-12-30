@@ -7,15 +7,13 @@ from pyrogram import Client,filters
 from pyrogram.types import (InlineKeyboardButton,  InlineKeyboardMarkup)
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup 
-from myrogram import notJoin, forceMe
+from myrogram import notJoin , forceMe , STARTER , BOTBY
 
 TOKEN = os.environ.get("TOKEN", "")
 
 API_ID = int(os.environ.get("API_ID", ))
 
 API_HASH = os.environ.get("API_HASH", "")
-
-OWNER = os.environ.get("OWNER", "")
 
 app = Client(
         "pdf",
@@ -24,24 +22,23 @@ app = Client(
     )
 
 print("Bot Started! © t.me/Prime_Hritu")
-print("Must Make Bot Admin In Force Sub Channel")
 LIST = {}
 
 @app.on_message(filters.command(['start']))
-async def start(client, message):
- chat = await forceMe(m.from_user.id)
- if chat == "no":
-         return await forceMe(c, m)
- await message.reply_text(text =f"""Hello {message.from_user.first_name } , I Am image to pdf bot 
+def start(client, message):
+ res = forceMe(message.chat.id)
+ if res == "no":
+   return notJoin(client,message)
+ message.reply_text(text =f"""Hello {message.from_user.first_name } , I Am image to pdf bot 
 
 i can convert image to pdf
 
 **Send Me Images And At End Send /convert**
 
-This bot created by @Prime_Hritu""",reply_to_message_id = message.id ,  reply_markup=InlineKeyboardMarkup(
+This bot created by {BOTBY}""",reply_to_message_id = message.id ,  reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Updates Channel 🇮🇳" ,url=f"https://t.me/{CH_NM}") ],
+                    InlineKeyboardButton("Updates Channel 🇮🇳" ,url=f"https://t.me/Private_Bots") ],
 [
                     InlineKeyboardButton("Developer 💀" ,url="https://t.me/Prime_Hritu") ],
 [
